@@ -1,0 +1,53 @@
+html,
+body {
+    height: 100%;
+    color : white;
+    margin: 0
+}
+
+body {
+    display       : flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: green;
+}
+
+footer {
+    flex            : 0 0 auto;
+    background-color: rgb(134, 39, 134);
+    font-size       : 36px;
+    padding         : 20px 0px;
+}
+
+header {
+    flex            : 0 0 auto;
+    background-color: red;
+}
+
+nav {
+    background-color: salmon;
+}
+
+nav>a {
+    display: inline-block;
+    font-size: 26px;
+    padding  : 10px 20px;
+    color    : white;
+}
+
+article {
+    min-width: min-content;
+    background-color: mediumblue;
+    padding         : 20px;
+    margin          : 20px;
+}
+
+h1,
+nav,
+footer {
+    width     : 100%;
+    text-align: center;
+}
