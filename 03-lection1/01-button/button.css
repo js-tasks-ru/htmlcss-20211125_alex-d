@@ -1,1 +1,10 @@
-/* Стилизация кнопки */
+.content {
+    display        : flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.accordion {
+    border: 1px solid black;
+}
+
