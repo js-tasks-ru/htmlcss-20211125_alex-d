@@ -1,34 +1,28 @@
-@import '..\..\assets\css\main.css';
-
-.content {
-    display        : flex;
-    margin         : auto;
-    justify-content: center;
-}
-
 .button {
     font-family: 'Roboto', sans-serif;
 }
 
 .button_medium {
-    margin       : 20px;
-    height       : 48px;
-    width        : 189px;
+    margin: 20px;
+    height: 48px;
+    width: 189px;
     border-radius: 8px;
-    font-size    : 16px;
-    font-weight  : 500;
-    color        : #FFFFFF;
-    border       : none;
+    line-height: 19px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    border: none;
 }
 
 .button_medium:hover {
     transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
-    cursor    : pointer;
+    cursor: pointer;
 }
 
 .button_medium:disabled {
     opacity: 0.5;
-    cursor : not-allowed;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 .button_primary {
@@ -41,8 +35,8 @@
 
 .button_alternate {
     background-color: var(--white);
-    border          : 1px solid #ACB5BD;
-    color           : #495057;
+    border: 1px solid #ACB5BD;
+    color: #495057;
 }
 
 .button_primary:not([disabled]):hover {
