@@ -3,7 +3,6 @@
 }
 
 .button_medium {
-    margin: 20px;
     height: 48px;
     width: 189px;
     border-radius: 8px;
@@ -35,19 +34,18 @@
 
 .button_alternate {
     background-color: var(--white);
-    border: 1px solid #ACB5BD;
+    border: 1px solid var(--grey-3);
     color: #495057;
 }
 
 .button_primary:not([disabled]):hover {
-    background-color: #2342C0;
+    background-color: var(--blue-1);
 }
 
 .button_secondary:not([disabled]):hover {
-    background-color: #5028C6;
-    ;
+    background-color: var(--purple-1);
 }
 
 .button_alternate:not([disabled]):hover {
-    border-color: #212429;
+    border-color: var(--grey-5);
 }
