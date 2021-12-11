@@ -1,0 +1,9 @@
+.header__caption {
+    font-weight: 500;
+}
+
+.header__caption_medium {
+    font-size: 50px;
+    line-height: 64px;
+    margin: 96px 0 77px 160px;
+}
