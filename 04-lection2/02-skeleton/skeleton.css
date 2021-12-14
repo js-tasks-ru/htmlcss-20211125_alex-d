@@ -16,7 +16,7 @@
 }
 
 .skeleton__header-bars {
-    display: block;
+    width: 100%;
     margin-left: 16px;
 }
 
@@ -28,11 +28,11 @@
 }
 
 .skeleton__header-bar_upper {
-    width: 172px;
+    width: 39%;
 }
 
 .skeleton__header-bar_nether {
-    width: 257px;
+    width: 59%;
 }
 
 .skeleton__header-circle {
