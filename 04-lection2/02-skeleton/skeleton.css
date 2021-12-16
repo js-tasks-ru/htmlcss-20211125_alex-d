@@ -1,0 +1,44 @@
+.skeleton {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid var(--grey-3);
+}
+
+.skeleton__content {
+    margin: 24px 40px 32px 24px;
+}
+
+.skeleton__header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+.skeleton__header-bars {
+    width: 100%;
+    margin-left: 16px;
+}
+
+.skeleton__bar {
+    height: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+}
+
+.skeleton__header-bar_upper {
+    width: 39%;
+}
+
+.skeleton__header-bar_nether {
+    width: 59%;
+}
+
+.skeleton__header-circle {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--grey-2);
+}
