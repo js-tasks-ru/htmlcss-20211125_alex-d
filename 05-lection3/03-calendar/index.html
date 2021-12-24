@@ -44,10 +44,8 @@
     return items;
   };
 
-  let emptyCells = makeItems(7, ['calendar__item', 'calendar__dayname'], true);
   let days = makeItems(31, ['calendar__item', 'calendar__day'], false);
   let inner = document.getElementsByClassName('calendar__inner')[0];
 
-  // append(inner, emptyCells);
   append(inner, days);
 </script>
