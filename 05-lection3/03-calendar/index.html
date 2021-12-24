@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <!-- Страница с календарем -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./calendar.css">
-        <title>Calendar</title>
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./calendar.css" />
+    <title>Calendar</title>
+  </head>
+  <body>
+    <div class="calendar">
+      <div class="calendar__title">December 2021</div>
+      <div class="calendar__wrapper">
+        <div class="calendar__inner">
+          <div class="calendar__item calendar__dayname">Mon</div>
+          <div class="calendar__item calendar__dayname">Tue</div>
+          <div class="calendar__item calendar__dayname">Thu</div>
+          <div class="calendar__item calendar__dayname">Wed</div>
+          <div class="calendar__item calendar__dayname">Fri</div>
+          <div class="calendar__item calendar__dayname">Sat</div>
+          <div class="calendar__item calendar__dayname">Sun</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
+
+<script>
+  const append = (parent, children) => {
+    children.map((child) => parent.appendChild(child));
+  };
+
+  const makeItems = (number, classNames, isEmpty) => {
+    items = [];
+    for (let i = 1; i <= number; i++) {
+      let element = document.createElement('div');
+      classNames.map((name) => {
+        element.classList.add(name);
+      });
+      if (!isEmpty) {
+        element.innerText = i;
+      }
+      items.push(element);
+    }
+    return items;
+  };
+
+  let emptyCells = makeItems(7, ['calendar__item', 'calendar__dayname'], true);
+  let days = makeItems(31, ['calendar__item', 'calendar__day'], false);
+  let inner = document.getElementsByClassName('calendar__inner')[0];
+
+  // append(inner, emptyCells);
+  append(inner, days);
+</script>
