@@ -1,10 +1,14 @@
 .calendar {
   box-sizing: border-box;
   padding: 28px 24px 36px 28px;
+  border: 1px solid var(--grey-3);
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .calendar__title {
   color: var(--blue-3);
+  font-family: 'Inter';
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
