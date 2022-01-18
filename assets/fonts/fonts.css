@@ -1,4 +1,7 @@
 @font-face {
-    font-family: 'Inter';
-    src: url(./Inter/Inter-Regular.ttf);
+  font-family: 'Inter';
+  src: url(./Inter/Inter-Regular.ttf);
+
+  font-family: 'Source Sans Pro';
+  src: url(./Source/SourceSansPro-Regular.ttf);
 }
