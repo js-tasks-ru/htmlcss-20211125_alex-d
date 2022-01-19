@@ -14,6 +14,8 @@
   --blue-1: #2342c0;
   --blue-2: #4263eb;
   --blue-3: #334d6e;
+  --blue-4: #4263eb;
+  --blue-5: rgba(160, 177, 245, 0.2);
 
   --red: #f03d3e;
   --grey-1: #f8f9fa;
@@ -22,6 +24,7 @@
   --grey-4: #495057;
   --grey-5: #e5e5e5;
   --grey-6: #f9fafc;
+  --grey-7: #90a0b7;
 
   --error: var(--red);
   --success: var(--blue);
