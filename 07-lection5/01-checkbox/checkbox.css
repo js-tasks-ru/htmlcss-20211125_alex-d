@@ -30,9 +30,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 15px;
-    height: 13px;
-    background-image: url("data:image/svg+xml,%3Csvg width='15' height='13' viewBox='0 0 15 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 7.5L5 11L13 2' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E");
 }
 
 .control__label {
@@ -44,6 +41,12 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+}
+
+label.checkbox .control__icon {
+    width: 15px;
+    height: 13px;
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='13' viewBox='0 0 15 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 7.5L5 11L13 2' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E");
 }
 
 .control__input:checked~.control__state .control__control {
