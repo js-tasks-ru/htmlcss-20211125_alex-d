@@ -1,3 +1,5 @@
+/* checkbox */
+
 .checkbox .control__control {
     width: 28px;
     height: 28px;
@@ -7,12 +9,11 @@
 .checkbox .control__icon {
     width: 15px;
     height: 13px;
-
 }
 
 .checkbox .control__input:checked~.control__state .control__control {
-    background: var(--blue-4);
-    border: var(--blue-4);
+    background-color: var(--blue-4);
+    border-color: var(--blue-4);
 }
 
 .checkbox .control__input:checked~.control__state .control__icon {

@@ -53,10 +53,11 @@
 }
 
 .control__input:focus~.control__state .control__control {
-    border: 2px solid var(--blue-2);
+    border: 1px solid var(--blue-4);
 }
 
 .control__input:focus~.control__state .control__label {
     box-sizing: border-box;
-    outline: 1px dotted black;
+    outline: 1px dashed var(--black);
+    border-radius: 2px;
 }
