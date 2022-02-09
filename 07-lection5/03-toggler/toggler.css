@@ -1,0 +1,31 @@
+.toggle .control__control {
+    width: 52px;
+    height: 28px;
+    border-radius: 14px;
+}
+
+.toggle .control__icon {
+    width: 24px;
+    height: 24px;
+    color: var(--grey-2);
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' rx='12' fill='%23DDE2E5'/%3E%3C/svg%3E%0A");
+}
+
+.toggle .control__input:not(checked)~.control__state .control__icon:not(checked) {
+    transform: translate(-24px, -50%);
+}
+
+.toggle .control__input:checked~.control__state .control__icon {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' rx='12' fill='white'/%3E%3C/svg%3E%0A");
+    transform: translate(0, -50%);
+}
+
+.toggle .control__input:disabled~.control__state .control__control .control__icon {
+    visibility: visible;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.25' width='24' height='24' rx='12' fill='%23ACB5BD'/%3E%3C/svg%3E%0A");
+}
+
+.toggle .control__input:checked~.control__state .control__control {
+    background-color: var(--blue-4);
+    border: 2px solid var(--blue-4);
+}
