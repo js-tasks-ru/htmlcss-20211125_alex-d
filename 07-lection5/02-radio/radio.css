@@ -1,0 +1,21 @@
+/* radio */
+
+.radio .control__control {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.radio .control__icon {
+    width: 18px;
+    height: 18px;
+}
+
+.radio .control__input:checked~.control__state .control__control {
+    background-color: var(--white);
+    border: 2px solid var(--blue-4);
+}
+
+.radio .control__input:checked~.control__state .control__icon {
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='18' height='18' rx='9' fill='%234263EB'/%3E%3C/svg%3E%0A");
+}
