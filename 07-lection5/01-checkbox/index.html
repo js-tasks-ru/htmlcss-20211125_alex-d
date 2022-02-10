@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <!-- Страница чекбокса -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./checkbox.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../components/controls/controls.css">
+    <link rel="stylesheet" href="./checkbox.css">
+</head>
+
+<body>
+    <span style="display: flex; flex-direction: column; row-gap: 20px; width: 200px; margin: 20px">
+        <label class="checkbox">
+            <input type="checkbox" class="control__input">
+            <span class="control__state">
+                <span class="control__control">
+                    <span class="control__icon"></span>
+                </span>
+                <span class="control__label">Default</span>
+            </span>
+        </label>
+        <label class="checkbox">
+            <input type="checkbox" class="control__input" name="name" checked>
+            <span class="control__state">
+                <span class="control__control">
+                    <span class="control__icon"></span>
+                </span>
+                <span class="control__label">Checked</span>
+            </span>
+        </label>
+        <label class="checkbox">
+            <input type="checkbox" class="control__input" disabled>
+            <span class="control__state">
+                <span class="control__control">
+                    <span class="control__icon"></span>
+                </span>
+                <span class="control__label">Disabled</span>
+            </span>
+        </label>
+    </span>
+</body>
+
 </html>
